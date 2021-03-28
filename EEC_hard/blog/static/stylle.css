@@ -1,0 +1,127 @@
+body {
+    /* background-image: "url('../img/bg.png')"; */
+    width: 100%;
+    font-family: 'Verdana', 'Arial', sans-serif;
+    font-size: 1.25em;
+    line-height: 1.5;
+}
+
+.wrapper {
+    width: 90%;
+    margin: auto;
+}
+
+.front {
+    width: 100%;
+    overflow: hidden;
+}
+
+.front a {
+    float: right;
+    margin-top: 0%;
+    color: rgb(2, 4, 43);
+    font: 1.2em sans-serif;
+    /* background-color: rgb(243, 235, 235); */
+}
+
+
+nav {
+    height: 60px;
+    margin-top: -30px;
+}
+
+nav li {
+    float: right;
+    font-size: 15px;
+    list-style-type: none;
+}
+
+nav a {
+    display: block;
+    padding: 20px;
+}
+
+#name {
+    color: #ffffff;
+    background-color: #022135;
+    text-align: center;
+    width: 30%;
+    margin-left: 35%;
+}
+
+#slogan {
+    color: #f8e009;
+    background-color: #033c61;
+    width: 40%;
+    text-align: center;
+    margin-left: 30%;
+    text-decoration: underline;
+}
+
+.newblog {
+    width: 70%;
+    height: 410px;
+    margin-left: 20%;
+    margin-top: 15px;
+    padding-right: 10px;
+    /* background-color: rgb(6, 35, 49); */
+    border-radius: 14px;
+  }
+
+  .input {
+    font-size: 20px;
+    width: 91%;
+    height: 30px;
+    margin-left: 10px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    padding: 10px;
+    border-radius: 7px;
+  }
+
+  .input-title {
+    font-size: 20px;
+    width: 91%;
+    height: 70px;
+    margin-left: 10px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    padding-left: 10px;
+    border-radius: 7px;
+  }
+
+  textarea {
+    font-size: 20px;
+    width: 91%;
+    height: 400px;
+    white-space: nowrap;
+    margin-left: 10px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    padding-left: 10px;
+    border-radius: 7px;
+  }
+
+.alert {
+    text-align: center;
+    margin-left: 15%;
+}
+
+.title {
+    text-align: center;
+}
+
+.title a {
+    text-decoration: none;
+    color: #022135;
+}
+
+.head {
+    width: 50%;
+    margin-left: 25%;
+    text-decoration: none;
+}
+
+.head p {
+    font-size: 15px;
+}

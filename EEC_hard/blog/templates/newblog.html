@@ -1,0 +1,30 @@
+{% extends "base.html" %}
+
+{% block page_content%}
+{% for message in get_flashed_messages() %}
+<div class="alert">
+    {{ message }}
+    <button type="button" class="close" onclick="myFunction()">&times;</button>
+</div>
+{% endfor %}
+<form action="/newblog" method="POST">
+    <div class='newblog'>
+        <label>Name:</label>
+        <input type="text" class="input" name="Name" required placeholder="your name"><br>
+        <label>Email_address:</label><br>
+        <input type="email" class="input" name="email" placeholder="your email"><br>
+        <label>Title:</label><br>
+        <input type="text" class="input-title" name="title" required placeholder="Title"><br>
+        <label>Blog Content:</label><br>
+        <textarea name="paragraph_text" placeholder="write your blog here"></textarea><br>
+        <input type="submit" class="submit" name="submit">
+    </div>
+</form>
+
+<script>
+    function myFunction() {
+        var msg = document.querySelector('.alert');
+        msg.remove();
+    }
+</script>
+{% endblock%}

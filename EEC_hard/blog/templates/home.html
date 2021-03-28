@@ -1,0 +1,16 @@
+{% extends "base.html" %}
+
+{% block page_content%}
+
+<a href="/newblog">write a new blog</a>   
+
+{% for blog in blogs %}
+<div class="head">
+<h2 class="title"><a href="/{{blog.title}}">{{ blog.title }}</a></h2>
+<p>Written by : {{ blog.name }}</p>
+<p>Posted on : {{ blog.date.strftime('%Y-%m-%d') }}</p>
+<hr>
+</div>
+{% endfor %}
+
+{% endblock%}

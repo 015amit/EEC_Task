@@ -1,0 +1,39 @@
+<!DOCTYPE hmtl>
+<html>
+
+<head>
+  <title>Home Page</title>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="static/stylle.css" />
+</head>
+
+
+<body>
+  <div class="wrapper">
+    <header>
+      <div class="front"
+        style="background-image: url(static/background.png); height: 300px; width: 99.8%; border: 1px solid black;">
+        <nav>
+          <div class="menu">
+            <ul>
+              <li><a href="#">Register</a></li>
+              <li><a href="#">Login</a></li>
+              <li><a href="#">Contact</a></li>
+              <li><a href="/">Home</a></li>
+            </ul>
+          </div>
+        </nav>
+        <div>
+          <h1 id="name">Our Blogging</h1>
+        </div>
+        <h3 id="slogan"><b>feeling that is attached to you</b></h3>
+      </div>
+    </header>
+
+
+    {% block page_content %} {% endblock %}
+  </div>
+</body>
+
+</html>

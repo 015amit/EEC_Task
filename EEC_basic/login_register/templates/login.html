@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <link rel="stylesheet" href="static/stylee.css" />
+</head>
+
+<body>
+    <div>
+        {% for message in get_flashed_messages() %}
+        {% if message %}
+        
+            {{ message }}
+            <button type="button" class="close" onclick="myFunction()">&times;</button><br>
+        {% endif %}
+        {% endfor %}
+        <form class="login" method="POST">
+            {{ form.hidden_tag() }}
+            <h1>Please Login </h1>
+            <br>
+            {{ form.email.label() }}<br>
+            {{ form.email(class="box",placeholder="your email") }}<br>
+
+            {{ form.password.label() }}<br>
+            {{ form.password(class="box",placeholder="your password") }}<br><br>
+
+            {{ form.submit(class="sub") }}<br>
+            <a href="{{ url_for('register') }}" >Don't have an account ?</a>
+        </form>
+    </div>
+</body>
+
+</html>

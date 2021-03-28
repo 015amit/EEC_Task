@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Register</title>
+    <link rel="stylesheet" href="static/stylee.css" />
+</head>
+
+<body>
+   
+    <form class="register" method="POST">
+        {{ form.hidden_tag() }}
+        <h1>Please Register Yourself</h1>
+        {{ form.name.label() }}<br>
+        {{ form.name(class="box", placeholder="your name") }}<br>
+        {{ form.email.label() }}<br>
+        {{ form.email(class="box" ,placeholder="your email") }}<br>
+        {{ form.password1.label() }}<br>
+        {{ form.password1(class="box", placeholder="Create a password") }}<br>
+        {{ form.password2.label() }}<br>
+        {{ form.password2(class="box", placeholder="Confirm password") }}<br><br>
+        {{ form.submit(class="sub") }}<br>
+        <a href="{{ url_for('login') }}" >Already have an account</a><br><br>
+        {% for message in get_flashed_messages() %}
+        {% if message %}
+        
+            {{ message }}
+            <button type="button" class="close" onclick="myFunction()">&times;</button><br>
+        {% endif %}
+        {% endfor %}
+    </form>
+    
+</body>
+
+<script>
+    function myFunction() {
+        var msg = document.querySelector('.alert');
+        msg.remove();
+    }
+</script>
+
+</html>

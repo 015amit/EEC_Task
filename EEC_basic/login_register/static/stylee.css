@@ -1,0 +1,19 @@
+.register {
+    text-align: center;
+}
+.register h1 {
+    color: aqua;
+}
+.box {
+    width: 50%;
+}
+
+.login {
+    text-align: center;
+}
+.login h1 {
+    color: aqua;
+}
+.sub {
+    background-color: rgb(235, 144, 80);
+}
